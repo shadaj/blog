@@ -1,0 +1,89 @@
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+main {
+  flex: 1 0 auto;
+}
+
+.card-content a {
+  text-transform: none;
+  margin-right: initial;
+}
+
+.card-content ul {
+  padding-left: 40px;
+}
+
+.card-content ul li {
+  list-style-type: disc;
+}
+
+.card-content ol li {
+  list-style-type: decimal !important;
+}
+
+.card-content table, th, td {
+  border: 1px solid black;
+}
+
+@media only screen and (max-device-width: 480px) {
+  h1.header {
+    font-size: 45px;
+  }
+}
+
+.highlight {
+  padding: 10px;
+  border-radius: 5px;
+}
+
+pre, code {
+  font-family: Menlo, Consolas, 'DejaVu Sans Mono', monospace !important;
+}
+
+.highlight pre {
+  margin: 0;
+}
+
+.nav-profile {
+  margin-top: 4px;
+  height: 48px;
+  border-radius: 50%;
+}
+
+@media only screen and (min-width : 601px) {
+  .nav-profile {
+    margin-top: 4px;
+    height: 56px;
+    border-radius: 50%;
+  }
+}
+
+.social {
+  line-height: 50px;
+}
+
+.social-button img {
+  display: inline-block;
+  max-width: 32px;
+  vertical-align: middle;
+}
+
+.social-button {
+  display: inline-block;
+  margin-bottom: 5px;
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+}
+
+.fb {
+  background: #3b5998;
+}
+
+.twitter {
+  background: #0099FF;
+}

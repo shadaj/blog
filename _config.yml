@@ -1,0 +1,18 @@
+# Site settings
+title: Shadaj's Blog
+url: "http://blog.shadaj.me" # the base hostname & protocol for your site
+twitter_username: ShadajL
+
+# Build settings
+markdown: redcarpet
+comments: true
+
+disqus_shortname: shadajsblog
+
+main_site: http://shadaj.me
+
+name: Shadaj Laddad
+
+avatar: http://shadaj.me/img/profile.jpg
+
+paginate: 5

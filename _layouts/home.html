@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  {% include header.html %}
+
+  <body>
+    {% include nav.html %}
+
+    <main>
+      <div class="section no-pad-bot" id="index-banner">
+        <div class="container">
+            <div class="row center">
+              <div class="col s12 m8" style="display: inline-block; float: none">
+                {% for post in paginator.posts %}
+                  <div class="card">
+                    <div class="card-image">
+                      {% if post.image %}
+                        <img src="{{ post.image }}">
+                        <span class="card-title">
+                          {{ post.title }}
+                          <div style="font-size: 75%">{{ post.date | date: '%B %d, %Y' }}</div>
+                        </span>
+                      {% else %}
+                        <div style="width: 100%; min-height: 100px; background-color: {{ post.color }}">
+                          <div class="card-title" style="position: relative">
+                            {{ post.title }}
+                            <div style="font-size: 75%">{{ post.date | date: '%B %d, %Y' }}</div>
+                          </div>
+                        </div>
+                      {% endif %}
+                    </div>
+                    <div class="card-content" style="text-align: left; font-size: 125%">
+                      {{ post.excerpt }}
+                    </div>
+                    <div class="card-action">
+                      <a href="{{ BASE_PATH }}{{ post.url }}">Read More</a>
+                    </div>
+                  </div>
+                {% endfor %}
+                <ul style="display: inline-block" class="pagination">
+                  {% if paginator.previous_page %}
+                    <li class="waves-effect"><a href="{{ paginator.previous_page_path }}"><i class="mdi-navigation-chevron-left"></i></a></li>
+                  {% else %}
+                    <li class="disabled"><a href="{{ paginator.previous_page_path }}"><i class="mdi-navigation-chevron-left"></i></a></li>
+                  {% endif %}
+                  <li>{{ paginator.page }}</li>
+                  {% if paginator.next_page %}
+                    <li class="waves-effect"><a href="{{ paginator.next_page_path }}"><i class="mdi-navigation-chevron-right"></i></a></li>
+                  {% else %}
+                    <li class="disabled"><a href="{{ paginator.next_page_path }}"><i class="mdi-navigation-chevron-right"></i></a></li>
+                  {% endif %}
+                </ul>
+              </div>
+            </div>
+        </div>
+      </div>
+    </main>
+
+    {% include footer.html %}
+  </body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  {% include header.html %}
+
+  <body>
+    {% include nav.html %}
+    <main>
+      <div class="parallax-container" style="height: auto">
+        {% if page.image %}
+          <div class="section no-pad-bot">
+            <div class="container">
+              <h1><br><br></h1>
+              <div style="background-color: rgba(0, 0, 0, 0.5)">
+                <h1 class="header center white-text">{{ page.title }}</h1>
+                <div class="row center">
+                  <h5 class="header col s12 white-text">{{ page.date | date: '%B %d, %Y' }}</h5>
+                </div>
+              </div>
+              <h1><br><br></h1>
+            </div>
+          </div>
+        {% endif %}
+        <div class="parallax" style="position: static">
+          {% if page.image %}
+            <img style="z-index: -1; display: block; background-image: url({{ page.image }}); background-attachment: fixed; background-size: cover">
+          {% else %}
+            <div class="section no-pad-bot" style="width: 100%; min-height: 500px; background-color: {{ page.color }}">
+              <div class="container">
+                <h4><br><br></h4>
+                <h1 class="header center white-text">{{ page.title }}</h1>
+                <div class="row center">
+                  <h5 class="header col s12 white-text">{{ page.date | date: '%B %d, %Y' }}</h5>
+                </div>
+                <h4><br><br></h4>
+              </div>
+            </div>
+          {% endif %}
+        </div>
+      </div>
+      <div class="container">
+        <div class="row center">
+          <div class="col s12 m12 l12" style="display: inline-block; float: none">
+            <div class="content" style="text-align: initial; font-size: 125%">
+              {{ content }}
+            </div>
+            <div class="social">
+              <a href="https://www.facebook.com/sharer/sharer.php?t={{ page.title }}&u={{ site.url }}{{ page.url }}"><div class="social-button fb">
+                <img src="/img/fb.png">
+              </div></a>
+              <a href="https://twitter.com/intent/tweet?text={{ page.title }}&url={{ site.url }}{{ page.url }}&via={{ site.twitter_username }}"><div class="social-button twitter">
+                <img src="/img/twitter.png">
+              </div></a>
+            </div>
+            {% if site.comments %}
+              <div style="margin-left: 10px; margin-right: 10px" id="disqus_thread"></div>
+              <script type="text/javascript">
+                  var disqus_shortname = '{{ site.disqus_shortname }}';
+                  (function() {
+                      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+                      dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+                      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+                  })();
+              </script>
+              <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+            {% endif %}
+          </div>
+        </div>
+      </div>
+    </main>
+
+    {% include footer.html %}
+  </body>
+</html>
