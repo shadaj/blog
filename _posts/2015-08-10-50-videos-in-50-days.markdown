@@ -1,0 +1,58 @@
+---
+layout: post
+title: "50 Videos in 50 Days"
+date: "2015-08-10"
+color: green
+---
+
+I run a [YouTube channel](http://youtube.com/shadajProgramming) about programming, in Scala so far. I have created videos about all sorts of projects, such as solving [Project Euler problems](https://www.youtube.com/playlist?list=PLo_ebKiwsNTpJmp47_lQJYuKqk6XVjf2a), [Fun Scala Projects](https://www.youtube.com/playlist?list=PLo_ebKiwsNTo3fFRU7qUZHC823hpGAtWd), and [building Minecraft mods](https://www.youtube.com/playlist?list=PLo_ebKiwsNTqB7tyqh9Sn-nE-mkejr-fU). I used to create videos every few weeks or so, but as I entered middle school and took on roles in the Leadership class and Student Council, the period between videos grew and eventually I stopped making them. I wanted to start making YouTube videos again, so this summer I set out to publish 50 new YouTube videos in 50 days. And I reached that goal yesterday. This is about how I made that happen.
+
+### Building a Rhythm
+When I started creating new videos, I decided that I would publish **one video** a day -- not two, not zero, but just one. I knew that if I publish more videos some days and none on others, I would lose the rhythm and would soon stop. This was a fantastic lesson in time-management -- things will move smoother if you follow a disciplined approach. Hopefully I will have a similar discipline during school!
+
+With this strict rhythm came a few challenges. While on most days I created and published one video, there were some times when I could only publish but not create. I went on a few short vacations, had friends over, and had to go to club meetings. When I knew events like these were coming, I recorded extra videos earlier so that I had a buffer to use. Sometimes I would procrastinate, telling myself that I would be able to quickly make the extra videos just before the event. I quickly figured out this was unnecessarily stressful, so I knew that I had to plan ahead of time.
+
+### Creating Variation
+To keep my videos interesting (to me and my viewers :)), I decided to create videos not only about Project Euler, but also about writing the [Collidium game](http://collidium.shadaj.me) from [scratch](http://github.com/shadaj/hello-collidium) in [Scala.js](http://scala-js.org). For those videos too, I kept a rhythm: Euler videos on weekdays and Collidium videos on weekends. Having such a schedule simplified the process of deciding which videos I needed to create -- there was no decision to be made!
+
+### Following a Process
+With the new burst of videos, I wanted to have better quality than the previous ones. I wanted to share each video across all my social accounts, add fancy title sequences and thumbnails, and improve my AV quality. Sharing my videos was simple, I just created a message as soon as the video was published and posted it on each of my accounts. I created a Keynote presentation to generate the title sequence as well as one to generate the custom thumbnail. But the process of improving the recording quality is what tripped me up. I would always forget one or the other thing, such as changing my display resolution, lowering the microphone level, and changing the IDE font size. I kept trying to remember the steps of the process in my head, but I couldn't always succeed! So I made a list of every step of making a video from preparation to publishing. This is how it looks:
+
+```
+Pre Production:
++ Generate titles before recording
++ Do not disturb notifications
++ Display resolution 1080p
++ Change font
++ Logitech camera and yeti
++ Set input volume in sound
++ Incognito window
++ Clear IntelliJ console
++ Make IntelliJ sidebar small
++ No phone
+
+Post Production:
++ Crop webcam recording
++ Chop off beginning and end
++ Insert intro
++ Upload as private
+
+Post Upload:
++ Generate thumbnail
++ Set moderation
++ Set description
++ Add tags and set thumbnail on youtube
+  + Euler: scala "Project Euler (Website)" "Computer Science (Field Of Study)" algorithm "Scala (Programming Language)" "computer programming" math
+  + Collidium: scala "Computer Science (Field Of Study)" "Scala (Programming Language)" "computer programming" "video games" "HTML5 (API)" scala.js
++ Add to playlist
++ Publish
++ Push git
++ Tweet
++ G+ post
+```
+
+By going through the checklist at every stage of making the video, I was able to move faster and make sure to complete each of the tasks. And it reduced the load on my memory throughout the process. Hopefully another lesson I will follow during high school -- your mind is not a scratchpad.
+
+I'm really glad that I set out and achieved this goal. Even with my internship (which I'll have a post about soon), I was always able to get one video out each day because of the rhythm, planing, and process. I had a lot of fun too!
+
+Now school is about to start (noooo, more homework!). From past experience I think that I will get busy very fast, especially with my new responsibility of leading my school robotics team's software division. So I will slow down, but hopefully not stop!
