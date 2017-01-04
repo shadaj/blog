@@ -4,6 +4,8 @@ url: "http://blog.shadaj.me" # the base hostname & protocol for your site
 twitter_username: ShadajL
 
 # Build settings
+gems: [jekyll-paginate]
+
 markdown: redcarpet
 comments: true
 
