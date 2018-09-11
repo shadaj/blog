@@ -4,9 +4,8 @@ url: "http://blog.shadaj.me" # the base hostname & protocol for your site
 twitter_username: ShadajL
 
 # Build settings
-gems: [jekyll-paginate]
+plugins: [jekyll-paginate]
 
-markdown: redcarpet
 comments: true
 
 disqus_shortname: shadajsblog
@@ -15,6 +14,6 @@ main_site: http://shadaj.me
 
 name: Shadaj Laddad
 
-avatar: http://shadaj.me/img/profile.jpg
+avatar: /profile.jpg
 
 paginate: 5
